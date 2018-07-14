@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteEphrom", "TesteEphrom\TesteEphrom.csproj", "{BF165689-88C9-487F-A7A9-434B2886D16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{CF5F53CB-C605-40EE-8338-955AC68338CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{C5F1AF06-AEBD-42EF-827B-1D7DAF177148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF165689-88C9-487F-A7A9-434B2886D16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF165689-88C9-487F-A7A9-434B2886D16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF165689-88C9-487F-A7A9-434B2886D16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF165689-88C9-487F-A7A9-434B2886D16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5F53CB-C605-40EE-8338-955AC68338CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5F53CB-C605-40EE-8338-955AC68338CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5F53CB-C605-40EE-8338-955AC68338CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5F53CB-C605-40EE-8338-955AC68338CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F1AF06-AEBD-42EF-827B-1D7DAF177148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F1AF06-AEBD-42EF-827B-1D7DAF177148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F1AF06-AEBD-42EF-827B-1D7DAF177148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F1AF06-AEBD-42EF-827B-1D7DAF177148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
