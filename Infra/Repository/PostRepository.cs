@@ -1,5 +1,6 @@
 ﻿using Infra.Data;
 using Infra.Entity;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -15,6 +16,9 @@ namespace Infra.Repository
 
     public static IEnumerable<Post> GetResults(string frase)
     {
+      Db = new ContextDB();
+      Connection = Db.Database.GetDbConnection();
+
       var sql = GetQuery(frase);
       var posts = new List<Post>();
 
@@ -41,7 +45,7 @@ namespace Infra.Repository
     {
       var tokens = frase.Split(" ");
       StringBuilder sql = new StringBuilder();
-      sql.Append("SELECT * FROM Post Where ");
+      sql.Append("SELECT Descricao FROM Post Where ");
 
       foreach (var token in tokens)
       {

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Infra.Repository;
 using Infra.Entity;
+using System.Net.Http;
 
 namespace API.Controllers
 {
@@ -13,9 +14,9 @@ namespace API.Controllers
   {
     // GET api/values
     [HttpPost]
-    public IEnumerable<Post> Get([FromBody] string value)
+    public IEnumerable<Post> Get([FromBody] string valor)
     {
-      return PostRepository.GetResults(value);
+      return PostRepository.GetResults(valor);
     }
   }
 }
